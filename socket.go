@@ -2,12 +2,6 @@ package socketserver
 
 import "fmt"
 
-type userDetail struct {
-	id    int
-	name  string
-	email string
-}
-
 func Hello(name string) string {
 	return fmt.Sprintf("Hello mr , %s!", name)
 }
@@ -17,9 +11,9 @@ func username(name string) string {
 }
 
 func useremail(name string) string {
-	return fmt.Sprintf(name + "@email.com")
+	return fmt.Sprintf("%s", name+"@email.com")
 }
 
-func welcomemessage() string {
-	return fmt.Sprintf("welcome user")
+func welcomemessage(name string) string {
+	return fmt.Sprintf("welcome user %s", name)
 }
