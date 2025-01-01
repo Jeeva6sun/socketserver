@@ -6,14 +6,14 @@ func Hello(name string) string {
 	return fmt.Sprintf("Hello mr , %s!", name)
 }
 
-func username(name string) string {
+func Username(name string) string {
 	return fmt.Sprintf(name)
 }
 
-func useremail(name string) string {
+func Useremail(name string) string {
 	return fmt.Sprintf("%s", name+"@email.com")
 }
 
-func welcomemessage(name string) string {
+func Welcomemessage(name string) string {
 	return fmt.Sprintf("welcome user %s", name)
 }
